@@ -214,7 +214,7 @@ public:
 	vec3 trace(const Ray& ray, const float& tMin, const float& tMax) const {
 		bool hit = false;
 		vec3 returnVec = { 0.0f, 0.0f, 0.0f };
-		float closestDistance = INFINITE;
+		float closestDistance = float(INFINITE);
 		Surface* hitObject = nullptr;
 
 		for (const auto& obj : objects) {
@@ -247,7 +247,6 @@ void render()
 	//Instead we draw to another buffer and copy this to the 
 	//framebuffer using glDrawPixels(...) every refresh
 	OutputImage.clear();
-	float closest;
 	Camera cam(vec3(0, 0, 0), vec3(0, 0, -1), vec3(0, 1, 0),
 		-0.1f, 0.1f, -0.1f, 0.1f, 0.1f);
 	PointLight light({ -4.0, 4.0, -3.0 }, { 0.0, 0.0, 0.0 });
@@ -290,10 +289,10 @@ void render()
 			// in each pixel, check the list of Surface.intersect function
 			// if intersect detected, color it as trace func returns
 			// and detect the distance to the intersection from eye(ray)
-			Ray ray = cam.generateRay(i, j);
-			if (scene.trace(ray, 0.0f, INFINITE) != color)
+			Ray ray = cam.generateRay(float(i), float(j));
+			if (scene.trace(ray, 0.0f, float(INFINITE)) != color)
 			{
-				color = scene.trace(ray, 0.0f, INFINITE);
+				color = scene.trace(ray, 0.0f, float(INFINITE));
 			}
 
 			// set the color, Gamma Correction Applied

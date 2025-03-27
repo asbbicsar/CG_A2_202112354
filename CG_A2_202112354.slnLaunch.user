@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Q1\\Q1.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Q2\\Q2.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Q3\\Q3.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

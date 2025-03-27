@@ -214,7 +214,7 @@ public:
 	vec3 trace(const Ray& ray, const float& tMin, const float& tMax) const {
 		bool hit = false;
 		vec3 returnVec = { 0.0f, 0.0f, 0.0f };
-		float closestDistance = INFINITE;
+		float closestDistance = float(INFINITE);
 		Surface* hitObject = nullptr;
 
 		for (const auto& obj : objects) {
@@ -247,7 +247,6 @@ void render()
 	//Instead we draw to another buffer and copy this to the 
 	//framebuffer using glDrawPixels(...) every refresh
 	OutputImage.clear();
-	float closest;
 	Camera cam(vec3(0, 0, 0), vec3(0, 0, -1), vec3(0, 1, 0),
 		-0.1f, 0.1f, -0.1f, 0.1f, 0.1f);
 	PointLight light({ -4.0, 4.0, -3.0 }, { 0.0, 0.0, 0.0 });
@@ -299,7 +298,7 @@ void render()
 				float offsetY = (rand() % 1000) / 1000.0f; // Random Value between [-0.5, 0.5]
 
 				Ray ray = cam.generateRay(i + offsetX, j + offsetY);
-				vec3 sampleColor = scene.trace(ray, 0.0f, INFINITE);
+				vec3 sampleColor = scene.trace(ray, 0.0f, float(INFINITE));
 				color += sampleColor;
 			}
 			color /= float(N);
