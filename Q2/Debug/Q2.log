@@ -1,0 +1,20 @@
+﻿  Q2.cpp
+  GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: rotate_slow function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: perspectiveFov function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: infinitePerspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: tweakedInfinitePerspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: roll function returning degrees is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: pitch function returning degrees is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: yaw function returning degrees is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: angle function returning degrees is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  GLM: angleAxis function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\Q2\Q2.cpp(217,25): warning C4305: 'initializing': truncation from 'unsigned int' to 'float'
+C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\Q2\Q2.cpp(293,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\Q2\Q2.cpp(293,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\Q2\Q2.cpp(294,31): warning C4305: 'argument': truncation from 'unsigned int' to 'const float'
+C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\Q2\Q2.cpp(296,36): warning C4305: 'argument': truncation from 'unsigned int' to 'const float'
+C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\Q2\Q2.cpp(250,8): warning C4101: 'closest': unreferenced local variable
+  Q2.vcxproj -> C:\Users\asbbi\Downloads\CG_Assignment_202112354\CG_Assignment_202112354\bin\Q2.exe
